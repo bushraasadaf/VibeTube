@@ -10,7 +10,7 @@ Interactive Database Schema: Optimized for 3rd Normal Form (3NF) to reduce redun
 
 Search & Filter: SQL-driven search functionality to query specific creators or video metadata.
 
-## Database Schema & Architecture
+## Database Schema & Architecture  
 The system is built on a relational model that defines the lifecycle of a video and its relationship to the user base.
 
 Key Entities:
