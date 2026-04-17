@@ -10,7 +10,9 @@ Interactive Database Schema: Optimized for 3rd Normal Form (3NF) to reduce redun
 
 Search & Filter: SQL-driven search functionality to query specific creators or video metadata.
 
-## Database Schema & Architecture  
+## Database Schema & Architecture 
+<img width="1196" height="589" alt="vibetube_relational_schema" src="https://github.com/user-attachments/assets/b1137639-c8ee-4fc3-a828-ba62ea16dcb4" />
+ 
 The system is built on a relational model that defines the lifecycle of a video and its relationship to the user base.
 
 Key Entities:
@@ -19,3 +21,12 @@ Users: Stores credentials, profile data, and role identifiers (Creator vs. Viewe
 Videos: Contains metadata including titles, descriptions, and foreign keys linking back to the Creator.
 
 Interactions: Handles the many-to-many relationships between users and content (e.g: likes, comments, and subscriptions).
+
+## Tech Stack
+Language: Python
+
+GUI Framework: PyQt (for a responsive, modern desktop interface)
+
+Database: SQL (Structured Query Language) for schema definition and manipulation
+
+Tools: Optimized for integration with relational database engines like SQLite or PostgreSQL
