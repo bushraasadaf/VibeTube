@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UploadVideoForm</class>
+ <widget class="QWidget" name="UploadVideoForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>393</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>VibeTube - Upload Video</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    QWidget {
+        background-color: #FFE4E9;
+        font-family: &quot;Segoe UI&quot;;
+        font-size: 12pt;
+        color: #333333;
+    }
+    QPushButton {
+        background-color: #FF6F91;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        padding: 6px 12px;
+    }
+    QPushButton:hover {
+        background-color: #FF9AA2;
+    }
+    QLineEdit, QTextEdit, QComboBox {
+        background-color: #FFFFFF;
+        border: 2px solid #FFC1CC;
+        border-radius: 6px;
+        padding: 4px;
+    }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label_title">
+     <property name="styleSheet">
+      <string notr="true">font-size:16pt; font-weight:bold; color:#333333;</string>
+     </property>
+     <property name="text">
+      <string>Upload New Video</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="input_title">
+     <property name="placeholderText">
+      <string>Enter video title</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="input_description">
+     <property name="placeholderText">
+      <string>Enter video description</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="dropdown_category">
+     <item>
+      <property name="text">
+       <string>Travel</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Study</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Comedy</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Fitness</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Lifestyle</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Motivation</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Music</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Technology</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Education</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Entertainment</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Other</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDateEdit" name="dateEdit"/>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btn_submit">
+     <property name="text">
+      <string>Submit</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

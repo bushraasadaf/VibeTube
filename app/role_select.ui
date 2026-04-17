@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginPage</class>
+ <widget class="QWidget" name="LoginPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>VibeTube - Login Page</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QWidget {
+    background-color: #FFE6F0;
+}
+QLabel#labelTitle {
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}
+QLineEdit {
+    background-color: #FFFFFF;
+    border: 2px solid #FFC1CC;
+    border-radius: 6px;
+    padding: 6px;
+}
+QPushButton {
+    background-color: #FF6F91;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+QPushButton:hover {
+    background-color: #FF9AA2;
+}
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="labelTitle">
+     <property name="text">
+      <string>Login</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="loginviewer_btn">
+     <property name="text">
+      <string>Login as Viewer</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="logincreator_btn">
+     <property name="text">
+      <string>Login as Creator</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="regiser">
+     <property name="text">
+      <string>Register as Viewer or Creator</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

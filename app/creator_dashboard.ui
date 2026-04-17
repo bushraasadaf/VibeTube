@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CreatorDashboard</class>
+ <widget class="QWidget" name="CreatorDashboard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>805</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Creator Dashboard - VibeTube</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QWidget {
+    background-color: #FFE6F0;
+    color: black; 
+}
+QPushButton {
+    background-color: #FF6F91;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+QPushButton:hover {
+    background-color: #FF9AA2;
+}
+QTableWidget {
+    background-color: #FFFFFF;
+    alternate-background-color: #FFE6F0;
+    gridline-color: #FFC1CC;
+    color: black;
+}
+QHeaderView::section {
+    background-color: #FF6F91;
+    color: white;
+    font-weight: bold;
+}
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label_dashboard">
+     <property name="styleSheet">
+      <string notr="true">font-size: 20pt; font-weight: bold; color: black;</string>
+     </property>
+     <property name="text">
+      <string>Creator Dashboard</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_subscriber_count">
+     <property name="styleSheet">
+      <string notr="true">
+       background-color: #FF6F91;
+       color: white;
+       font-weight: bold;
+       padding: 6px;
+       border-radius: 6px;
+      </string>
+     </property>
+     <property name="text">
+      <string>Subscribers: 0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="table_videos">
+     <property name="rowCount">
+      <number>0</number>
+     </property>
+     <property name="columnCount">
+      <number>6</number>
+     </property>
+     <attribute name="horizontalHeaderVisible">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <column>
+      <property name="text"><string>Title</string></property>
+     </column>
+     <column>
+      <property name="text"><string>Genre</string></property>
+     </column>
+     <column>
+      <property name="text"><string>Upload Date</string></property>
+     </column>
+     <column>
+      <property name="text"><string>No. of Views</string></property>
+     </column>
+     <column>
+      <property name="text"><string>No. of Likes</string></property>
+     </column>
+     <column>
+      <property name="text"><string>No. of Comments</string></property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btn_upload">
+     <property name="text"><string>Upload New Video</string></property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_edit_delete">
+     <item>
+      <widget class="QPushButton" name="btn_edit">
+       <property name="text"><string>Edit Selected Video</string></property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_delete">
+       <property name="text"><string>Delete Selected Video</string></property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_back_logout">
+     <item>
+      <widget class="QPushButton" name="btn_logout">
+       <property name="text"><string>Logout</string></property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SearchResultsPage</class>
+ <widget class="QWidget" name="SearchResultsPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>425</width>
+    <height>429</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>VibeTube - Search Results</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    QWidget {
+        background-color: #FFE6F0;
+        color: black; 
+    }
+    QLabel#label_results {
+        font-size: 24px;
+        font-weight: bold;
+        color: #5e3c58;
+        padding-bottom: 5px;
+    }
+    QLineEdit {
+        background-color: #FFFFFF;
+        border: 2px solid #FFC1CC;
+        border-radius: 6px;
+        padding: 6px;
+    }
+    QPushButton {
+        background-color: #FF6F91;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        padding: 8px 15px;
+    }
+    QPushButton:hover {
+        background-color: #FF9AA2;
+    }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="mainVerticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="topBarLayout"/>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_results">
+     <property name="text">
+      <string>Search Results </string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>405</width>
+        <height>326</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="resultsLayout">
+       <item>
+        <widget class="QLabel" name="lblPlaceholder">
+         <property name="text">
+          <string>Videos returned by SQL query will be displayed.</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnHome">
+     <property name="text">
+      <string>Back to Homepage</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
